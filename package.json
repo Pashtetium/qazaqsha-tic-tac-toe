@@ -1,0 +1,18 @@
+{
+  "name": "qazaqsha-tic-tac-toe",
+  "version": "1.0.0",
+  "description": "qazaqsha Tic-Tac-Toe",
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "packageManager": "pnpm@9.15.0",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "node server/index.js"
+  },
+  "dependencies": {
+    "socket.io": "^4.6.1",
+    "sqlite3": "^5.1.7"
+  }
+}
