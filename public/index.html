@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Qazaqsha TIC-TAC-TOE</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Qazaqsha Tic-Tac-Toe</h1>
+
+      <div id="roomControls" class="room-controls">
+        <button id="createRoomBtn" class="btn">Create New Room</button>
+        <div class="join-room">
+          <input
+            type="text"
+            id="roomCodeInput"
+            placeholder="Enter room code"
+            maxlength="6"
+          />
+          <button id="joinRoomBtn" class="btn">Join Room</button>
+        </div>
+      </div>
+
+      <div id="gameInfo" class="game-info hidden">
+        <p>Room Code: <strong id="roomCodeDisplay"></strong></p>
+        <p>You are: <strong id="playerSymbol"></strong></p>
+        <p id="statusMessage">Waiting for opponent...</p>
+      </div>
+
+      <div id="gameBoard" class="Board hidden">
+        <button class="Cell" data-index="0"></button>
+        <button class="Cell" data-index="1"></button>
+        <button class="Cell" data-index="2"></button>
+        <button class="Cell" data-index="3"></button>
+        <button class="Cell" data-index="4"></button>
+        <button class="Cell" data-index="5"></button>
+        <button class="Cell" data-index="6"></button>
+        <button class="Cell" data-index="7"></button>
+        <button class="Cell" data-index="8"></button>
+        <button class="Cell" data-index="9"></button>
+        <button class="Cell" data-index="10"></button>
+        <button class="Cell" data-index="11"></button>
+        <button class="Cell" data-index="12"></button>
+        <button class="Cell" data-index="13"></button>
+        <button class="Cell" data-index="14"></button>
+        <button class="Cell" data-index="15"></button>
+      </div>
+    </main>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="game.js"></script>
+  </body>
+</html>

@@ -1,0 +1,134 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f5f5;
+}
+
+main {
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.Board {
+  width: 600px;
+  height: 600px;
+  border: 1px solid burlywood;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 8px;
+  padding: 8px;
+  background-color: burlywood;
+}
+
+.Cell {
+  background-color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 48px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s;
+
+  &:hover {
+    background-color: #f0f0f0;
+  }
+
+  &:active {
+    background-color: #e0e0e0;
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.6;
+  }
+}
+
+.room-controls {
+  margin-bottom: 30px;
+}
+
+.join-room {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.btn {
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btn:hover {
+  background-color: #45a049;
+}
+
+.btn:active {
+  background-color: #3d8b40;
+}
+
+#roomCodeInput {
+  padding: 12px;
+  font-size: 16px;
+  border: 2px solid #ddd;
+  border-radius: 6px;
+  width: 200px;
+  text-transform: uppercase;
+}
+
+.game-info {
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.game-info p {
+  margin: 10px 0;
+  font-size: 18px;
+  color: #333;
+}
+
+#statusMessage {
+  font-weight: bold;
+  color: #4CAF50;
+}
+
+.t-cell {
+  background-color: #FFD700 !important;
+  color: #333 !important;
+  cursor: not-allowed !important;
+  opacity: 1 !important;
+}
+
+.t-cell:hover {
+  background-color: #FFD700 !important;
+}
