@@ -12,7 +12,7 @@ const { Server } = require('socket.io');
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 const PUBLIC_DIR = path.join(__dirname, '..', 'public');
 
 const MIME_TYPES = {
