@@ -2,13 +2,9 @@ services:
   - type: web
     name: qazaqsha-tic-tac-toe
     runtime: docker
-    plan: free # Change to 'free' if you want the free tier
-    region: frankfurt # Options: oregon, frankfurt, singapore, ohio, virginia
+    plan: free
+    region: frankfurt
     dockerfilePath: ./Dockerfile
     envVars:
       - key: NODE_ENV
         value: production
-    disk:
-      name: game-data
-      mountPath: /app/data
-      sizeGB: 1
