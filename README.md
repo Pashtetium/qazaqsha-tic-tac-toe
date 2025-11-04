@@ -1,6 +1,6 @@
 # Qazaqsha Tic-Tac-Toe
 
-A 4x4 multiplayer tic-tac-toe game built with vanilla Node.js, WebSockets, and SQLite.
+A 4x4 multiplayer tic-tac-toe game built with vanilla Node.js, WebSockets, and SQLite. Built using minimal dependencies and no TypeScript. Build step is super simple and fast.
 
 ## Features
 
